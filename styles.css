@@ -1,5 +1,5 @@
 body{
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
     margin: 0;
@@ -22,7 +22,20 @@ h2{
 }
 
 .navlink{
+    color: #438bdd;
     font-size: 1.75rem;
+    transition: 300ms;
+}
+.navlink:hover{
+    color: #ededed;
+    
+}
+.navlink:visited{
+    color: hsl(283, 35%, 57%);
+}
+
+.navlink:visited:hover{
+    color: #ededed;
 }
 
 img{
