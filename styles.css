@@ -3,10 +3,10 @@ body{
     font-weight: 400;
     font-size: 1.25rem;
     margin: 0;
-    background-color: #242525;
+    background-color: rgb(36, 37, 37);
     color:rgb(228, 228, 228);
 }
-li{
+li, p{
     max-width: 900px;
 }
 h1{
@@ -26,12 +26,14 @@ h2{
     font-size: 1.75rem;
     transition: 300ms;
 }
+
 .navlink:hover{
     color: #ededed;
     
 }
 .navlink:visited{
-    color: hsl(283, 35%, 57%);
+    color: hsl(281, 57%, 58%);
+    text-shadow: 1px 1px rgb(36, 37, 37);
 }
 
 .navlink:visited:hover{
@@ -57,6 +59,36 @@ img{
 .section{
     margin-bottom: 64px;
 }
+.section{
+    margin-bottom: 64px;
+}
+.section:last-child{
+    margin-bottom: 0px;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 32px;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+  }
+.footer_bg{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(36, 37, 37, 0.4);
+    backdrop-filter: blur(3px);
+    mask-image: linear-gradient(rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+
 .heading-text{
     max-width: 45%;
 }
